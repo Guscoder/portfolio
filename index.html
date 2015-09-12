@@ -1,0 +1,1203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!-- Custom styles for this template -->
+    <link href="css/normalize.css" rel="stylesheet">    
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Fredoka+One' rel='stylesheet' type='text/css'>   
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/colorbox.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".project-group").colorbox({rel:'project-group', transition:"none", width:"75%", height:"75%"});
+        $(".inline").colorbox({inline:true, width:"50%"});
+
+        var resizeTimer;
+        $(window).resize(function(){
+            if (resizeTimer) clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                if ($('#cboxOverlay').is(':visible')) {
+                    $.colorbox.load(true);
+                }
+            }, 300)
+        });
+      });
+    </script>
+
+    <title>Web Developer Justin Gustafson</title>
+   
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <nav class="navbar navbar-custom navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Justin Gustafson</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a data-toggle="collapse" data-target=".navbar-collapse" href="#page-top"></a>
+            </li>
+            <li class="page-scroll">
+              <a data-toggle="collapse" data-target=".navbar-collapse" href="#project-section">Portfolio</a>
+            </li>
+            <li class="page-scroll">
+              <a data-toggle="collapse" data-target=".navbar-collapse" href="#skills">Skills</a>
+            </li>
+            <li class="page-scroll">
+              <a data-toggle="collapse" data-target=".navbar-collapse" href="#about">About</a>
+            </li>
+            <li class="page-scroll">
+              <a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <section class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 intro-desc page-scroll">
+              <h1 class="brand-heading">Justin Gustafson</h1>
+              <p id="intro-text">Front-end Web Development</p>
+              <a href="#project-section"><div class="glyphicon glyphicon-menu-down"></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+   
+    <section id="project-section" class="content-section">
+      <div class="spacer-line">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle1"></div>
+      </div>
+      <h2 class="text-center">Project Portfolio</h2>
+      <p class="text-center">These samples showcase the skills and knowledge I will bring to any web development project.  Efficient, top quality websites are my goal.</p>
+      <div class="spacer-line">
+      </div>
+      <ul id="project-list">
+        <li class="project-type"><a href="#">All Projects</a></li>
+        <li class="project-type"><a href="#">JavaScript</li>
+        <li class="project-type"><a href="#">jQuery</a></li>
+        <li class="project-type"><a href="#">Bootstrap</a></li>
+        <li class="project-type"><a href="#">APIs</a></li>
+        <li class="project-type"><a href="#">PHP</a></li>
+        <li class="project-type"><a href="#">PSDtoWeb</a></li>
+        <li class="project-type"><a href="#">ResponsiveWeb</a></li>
+      </ul>
+
+      <div class="container">
+        <div class="row" id="#project-container">
+            <a class='inline project-group bootstrap responsiveweb' href="#inline_content1">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/phone_sales.gif" alt="Phone Sales Sample" class="grow"/><br>
+                    Phone Sales Page<br>
+                    <div class="boxesInfo">Bootstrap/HTML/CSS</div>
+              </div>
+            </a>    
+
+            <a class='inline project-group bootstrap responsiveweb' href="#inline_content2">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                  <img src="img/social_network.gif" alt="Social Network sample" class="grow"/><br>
+                    Social Network<br>
+                    <div class="boxesInfo">Bootstrap/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group psdtoweb bootstrap responsiveweb' href="#inline_content3">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/Belgocontrol.gif" alt="PSD to Web Sample" class="grow"/><br>
+                    Belgocontrol PSD<br>
+                    <div class="boxesInfo">PSD to Web</div>
+              </div>
+            </a>  
+
+            <a class='inline project-group bootstrap jquery javascript responsiveweb' href="#inline_content4">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                  <img src="img/Digital-Agency.gif" alt="Digital Agency sample" class="grow"/><br>
+                    Digital Ad Agency<br>
+                    <div class="boxesInfo">JS/jQuery/Bootstrap</div>
+              </div>
+            </a>
+
+            <a class='inline project-group  bootstrap javascript responsiveweb' href="#inline_content21">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                <img src="img/EDXHosting.JPG" alt="EDX Hosting" class="grow"/><br>
+                    EDX Web Hosting<br>
+                <div class="boxesInfo">Bootstrap/JavaScriptHTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group jquery bootstrap responsiveweb' href="#inline_content22">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                <img src="img/AlphaCMS.JPG" alt="Alpha CMS" class="grow"/><br>
+                    Alpha CMS<br>
+                <div class="boxesInfo">Bootstrap/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group apis javascript jQuery responsiveweb' href="#inline_content23">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                <img src="img/Zipcodefinder.JPG" alt="Zipcode Finder" class="grow"/><br>
+                    Zipcode Finder<br>
+                <div class="boxesInfo">JS/jQuery/API/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group php javascript responsiveweb' href="#inline_content5">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                <img src="img/Weather_genie.gif" alt="Weather genie" class="grow"/><br>
+                    Weather Genie<br>
+                <div class="boxesInfo">JS/PHP/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group apis jquery javascript' href="#inline_content6">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/Search_engine.gif" alt="Search Engine sample" class="grow"/><br>
+                    YouTube Custom API<br>
+                    <div class="boxesInfo">API/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group javascript jquery' href="#inline_content7">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                  <img src="img/drawing_tool.gif" alt="Drawing Tool" class="grow"/><br>
+                    JS Drawing Tool<br>
+                    <div class="boxesInfo">JS/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group bootstrap jquery javascript responsiveweb' href="#inline_content8">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/Gallery.gif" alt="Portfolio Gallery" class="grow"/><br>
+                    Portfolio Gallery<br>
+                    <div class="boxesInfo">JS/Jquery/Bootstrap</div>
+              </div>
+            </a>
+
+            <a class='inline project-group jquery javascript responsiveweb' href="#inline_content13">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                  <img src="img/lightbox_gallery.gif" alt="Lightbox Gallery" class="grow"/><br>
+                    Lightbox Gallery<br>
+                    <div class="boxesInfo">JS/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+          <div class="projectGroup2">
+
+
+            <a class='inline project-group jquery javascript' href="#inline_content9">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                  <img src="img/code_player.gif" alt="Code Player" class="grow"/><br>
+                    Code Player Site<br>
+                    <div class="boxesInfo">JS/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group javascript jquery' href="#inline_content10">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/Content_slider.gif" alt="Content Slider" class="grow"/><br>
+                    Content Slider<br>
+                    <div class="boxesInfo">JS/jquery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group jquery javascript' href="#inline_content11">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                  <img src="img/etch_a_sketch.gif" alt="Etch-A-Sketch" class="grow"/><br>
+                    Etch-A-Sketch<br>
+                    <div class="boxesInfo">JS/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group javascript jquery' href="#inline_content12">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/js_quiz.gif" alt="JavaScript Quiz" class="grow"/><br>
+                    JS Quiz<br>
+                    <div class="boxesInfo">JS/HTML/CSS</div>
+              </div>
+            </a>
+
+
+
+            <a class='inline project-group javascript jquery responsiveweb' href="#inline_content14">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/mobile_responsive_menu.gif" alt="Mobile Responsive Menu" class="grow"/><br>
+                    Mobile Responsive Menu<br>
+                    <div class="boxesInfo">HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group jquery javascript' href="#inline_content15">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                  <img src="img/sw_quiz.gif" alt="Star Wars Quiz" class="grow"/><br>
+                    Star Wars Quiz<br>
+                    <div class="boxesInfo">JS/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group javascript jquery' href="#inline_content16">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/reaction.gif" alt="Reaction Test" class="grow"/><br>
+                    Reaction Test<br>
+                    <div class="boxesInfo">JS/HTML/CSS</div>
+              </div>
+            </a>
+
+             <a class='inline project-group jquery javascript responsiveweb' href="#inline_content17">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                <img src="img/Thumbslider.gif" alt="Apple Thumbnail Slider" class="grow"/><br>
+                    Apple Thumbnail Slider<br>
+                <div class="boxesInfo">JS/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group javascript jquery' href="#inline_content18">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                <img src="img/spoiler_page.gif" alt="Sample jQuery Spoiler page" class="grow"/><br>
+                    Spoiler Page<br>
+                <div class="boxesInfo">JS/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group apis jquery javascript' href="#inline_content19">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 primaryBox">
+                  <img src="img/flickr_search.gif" alt="Flickr Search" class="grow"/><br>
+                    Flickr Search API<br>
+                    <div class="boxesInfo">API/HTML/CSS</div>
+              </div>
+            </a>
+
+            <a class='inline project-group javascript jquery' href="#inline_content20">
+              <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 lightBox">
+                <img src="img/todo_list.gif" alt="To Do List" class="grow"/><br>
+                    To Do List<br>
+                <div class="boxesInfo">JS/jQuery/HTML/CSS</div>
+              </div>
+            </a>
+
+        </div>
+      </div>
+    </div>
+      
+<div style='display:none'>
+    <div id='inline_content1' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/phone_sales.gif" alt="Sales Website" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Phone Sales Website</div>
+            <div class="popUpService">Bootstrap</div>
+            <div class="popUpService">HTML/CSS</div>
+            This sample page for a potential phone sales company called 'Gamma' demonstrates the use of various features of Bootstrap.
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/phoneappsales/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content2' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/social_network.gif" alt="Social Network Site" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Social Network Site</div>
+            <div class="popUpService">Bootstrap</div>
+            <div class="popUpService">Development</div>
+            <div class="popUpService">Newsletter</div>
+            <div class="popUpService">Social Media</div>
+            Using Bootstrap, I created a social network site that has several different pages and is responsive to various screen sizes.
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Socialnetwork/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content3' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Belgocontrol.gif" alt="PSD to Web" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">PSD to Web</div>
+            <div class="popUpService">Bootstrap</div>
+            <div class="popUpService">Photoshop</div>
+            <div class="popUpService">HTML/CSS</div>
+            Taking a designer's original Photoshop design page, I created a page using CSS/HTML/Bootstrap that mirrored the designer's details and appearance in every way possible.
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Belgocontrol/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content4' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Digital-Agency.gif" alt="Digital Ad Agency" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Digital Ad Agency</div>
+            <div class="popUpService">Bootstrap</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">HTML/CSS</div>
+              This one-page site for a sample Digital Ad Agency shows the use of Bootstrap in combination with jQuery in creating a responsive website design. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/DigitalAgency/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content5' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Weather_genie.gif" alt="Weather Genie" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Weather Genie</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">PHP</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">HTML/CSS</div>
+            Using some jQuery, PHP and the "scraping" technique, I created a simple weather search tool. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/WeatherScraper/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content6' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Search_engine.gif" alt="YouTube API Search" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">YouTube API Search</div>
+            <div class="popUpService">JS</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">API</div>
+            Using the YouTube API with JSON and JS, I created a search engine and then displayed the results in a CSS formatted page. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/YouTube_Search_Engine/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content7' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/drawing_tool.gif" alt="Drawing Tool" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Drawing Tool</div>
+            <div class="popUpService">JS</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">HTML/CSS</div>
+            In this HTML5 sample, I used the canvas and incorporated JS to enable users to draw and also change colors. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/drawingtool/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content8' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Gallery.gif" alt="Portfolio Gallery" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Portfolio Gallery</div>
+            <div class="popUpService">Bootstrap</div>
+            <div class="popUpService">JS</div>
+            <div class="popUpService">jQuery</div>
+              This simple portfolio layout uses Bootstrap and a jquery plugin "Fancybox" to display a varity of designs that are easily accesible using the plugin.
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Portfoliogallery/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content9' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/code_player.gif" alt="Code Player" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Code Player</div>
+            <div class="popUpService">HTML/CSS</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">jQuery</div>
+              The CodePlayer allows you to write HTML/CSS on the page and see the immediate results. It could also use Javascript but will not display due to security risks (as this is only a sample).
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/CodePlayer/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content10' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Content_slider.gif" alt="Content Slider" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Content Slider</div>
+            <div class="popUpService">HTML/CSS</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">jQuery</div>
+              This simple portfolio layout uses Bootstrap and a jquery plugin "Fancybox" to display a varity of designs that are easily accesible using the plugin.
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Content_Slider/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content11' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/etch_a_sketch.gif" alt="Etch-A-Sketch" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Etch-A-Sketch</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">jQuery</div>
+              A fun tool demonstrating the use of JavaScript and how it can be used for drawing in this format
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/EtchASketch/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content12' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/js_quiz.gif" alt="JavaScript Quiz" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">JavaScript Quiz</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">HTML/CSS</div>
+              This simple quiz illustrates the use of JavaScript in creating interactive web pages, in this case a quiz about JavaScript itself.
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/JS_quiz/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content13' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/lightbox_gallery.gif" alt="Lightbox Image Gallery" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Lightbox Image Gallery</div>
+            <div class="popUpService">HTML/CSS</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">jQuery</div>
+              The jQuery "Lightbox" plugin offers a great way to showcase photos and images on your website. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Lightbox/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content14' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/mobile_responsive_menu.gif" alt="Mobile Responsive Menu" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Mobile Responsive Menu</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">HTML/CSS</div>
+              This is an example of a simple but highly useful responsive web menu that will change depending on the screen size it is being viewed on. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/mobile_menu_complete/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content15' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/sw_quiz.gif" alt="Star Wars Quiz" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Star Wars Quiz</div>
+            <div class="popUpService">JavaScriptS</div>
+              This simple quiz illustrates how JavaScript can be used to created interactive web apps. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/SW_quiz/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content16' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/reaction.gif" alt="Reaction Test" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Reaction Test</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">HTML/CSS</div>
+              The reaction test is created using JavaScript and tests how quickly you can click on an object that appears randomly on the page.             
+              <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/ReactionTest/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content17' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Thumbslider.gif" alt="Apple Thumbnail Slider" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Apple Thumbnail Slider</div>
+            <div class="popUpService">HTML/CSS</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">JavaScript</div>
+            This image slider was modeled after the Apple displays and uses jQuery to implement the sliding actions. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Thumbslider/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+<div style='display:none'>
+    <div id='inline_content18' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/spoiler_page.gif" alt="Spoiler Page Sample" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Spoiler Page sample</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">HTML/CSS</div>
+            This spoiler page illustrates the use of jQuery and CSS to hide and show areas of a page based on user interaction with it. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/SpoilerReveal/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+<div style='display:none'>
+    <div id='inline_content19' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/flickr_search.gif" alt="Flickr Search Engine" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Flickr Search Engine</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">API</div>
+            <div class="popUpService">JavaScript</div>
+            Here I focused more on the creation of the Flickr search engine using the Flickr API to find and display specific types of photos. I also used jQuery/JS to help display the results. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Flickr/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+<div style='display:none'>
+    <div id='inline_content20' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/todo_list.gif" alt="To Do List" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">To Do List</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">HTML/CSS</div>
+            This uses JavaScript to provide functionality to this "To Do" list where the user can create, edit and check off items from the list. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/ToDoList/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content21' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/EDXHosting.JPG" alt="EDX Web Hosting" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">EDX Web Hosting</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">Bootstrap</div>
+            <div class="popUpService">HTML/CSS</div>
+            This site is an example of using Bootstrap and some of its JavaScript components like the carousel feature found on the front page.  
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/EDX_Hosting/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content22' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/AlphaCMS.JPG" alt="Alpha CMS" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">Alpha CMS</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">Bootstrap</div>
+            <div class="popUpService">HTML/CSS</div>
+            The Alpha CMS is a sampled design of a potential Content Management System and how it might be arranged and organized. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/Alpha_CMS/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<div style='display:none'>
+    <div id='inline_content23' style='padding:20px; background:#fff;'>
+        <div class="popUpLeft">
+            <img src="img/Zipcodefinder.JPG" alt="ZipCode Finder" />
+        </div>
+        <div class="popUpRight">
+            <div class="popUpTitle">ZipCode Finder</div>
+            <div class="popUpService">jQuery</div>
+            <div class="popUpService">JavaScript</div>
+            <div class="popUpService">APIs</div>
+            <div class="popUpService">HTML/CSS</div>
+            This uses the Google Geolocator API to return the zip code for any address typed in by the user. 
+            <br><br>
+            <a href="http://79.170.44.126/jtwgus.com/ZipcodeFinder/" target="_blank"><div class="popUpBtn">OPEN WEBSITE</div></a>
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+    <div id="showProjectsArrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+
+  </section>
+
+    <section id="skills" class="content-section">
+        <div class="skills-section">
+          <div class="container skills-container">
+
+            <div class="row text-center">
+              <div class="spacer-line">
+                <div class="circle1"></div>
+                <div class="circle3"></div>
+                <div class="circle1"></div>
+              </div>
+              <h2>Skills and Training</h2>
+            </div>
+
+            <div class="row skills-row">
+              <div class="col-md-4 skills-box front-end">
+                <ul class="list-group skills-list">
+                  <li class="list-group-item list-header">Current Studies:</li>
+                  <li class="list-group-item"><strong>Treehouse:</strong> Web Design Track
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%
+                        <span class="sr-only">65% Complete (success)</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item"><strong>Treehouse:</strong> Wordpress Track
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">15%
+                        <span class="sr-only">15% Complete (success)</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item"><strong>CodeSchool:</strong> Angular JS
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">15%
+                        <span class="sr-only">15% Complete (success)</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/wordpress.png"> WordPress</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/php.png"> PHP</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/mysql.png"> MySQL</li>
+                  <li class="list-group-item">Gulp</li>
+                   <li class="list-group-item border-bottom"><strong>Reading:</strong> Eloquent Javascript by Marijn Haverbeke
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">25%
+                        <span class="sr-only">25% Complete (success)</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-header">Other Experiences & Education</li>
+                  <li class="list-group-item">B.A. Alma College (1997)</li>
+                  <li class="list-group-item">M.Ed Grand Valley State University (2007)</li>
+                  <li class="list-group-item">Fulbright Scholar Czech Republic (2005)</li>
+                  <li class="list-group-item">Model United Nations World Champion (1997-2004)</li>
+                </ul>
+              </div>
+
+              <div class="col-md-4 skills-box" id="framework-skills">
+                <ul class="skills-list list-group" >
+                  <li class="list-header list-group-item">Front-End</li>
+                  <li  class="list-group-item"><img class="skills-icon" src="img/html5.png"> HTML(5)</li>
+                  <li  class="list-group-item"><img class="skills-icon" src="img/css3.png"> CSS(3)</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/js.png"> JavaScript</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/jquery-small.png"> jQuery</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/api.png"> APIs</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/ajax.png"> AJAX/JSON</li> 
+
+                  <li class="list-header list-group-item">Frameworks & Other Skills</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/bootstrap.png"> Bootstrap</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/ps.png"> Photoshop</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/angular.jpg"> AngularJS (currently learning)</li>    
+                  <li class="list-group-item"><img class="skills-icon" src="img/sass-small.png"> Sass</li>
+                  <li class="list-group-item"><img class="skills-icon" src="img/less-logo.png"> LESS</li>
+                    
+                  <li class="list-group-item">Yeoman/Bower/Grunt</li>
+                  <li class="list-group-item">Accessibility</li>
+                  <li class="list-group-item">Site Optimization</li>
+                  <li class="list-group-item">Responsive Web</li>    
+                </ul>
+              </div>
+
+
+              <div class="col-md-4" id="education">
+                <ul class="list-group education-list">
+                  <li class="list-group-item list-header" id="ed-training">Education & Training</li>
+                  
+                  <a href="#" role="button" data-toggle="modal" data-target="#treehouseModal">
+                  <li class="list-group-item ed-heading">Treehouse</li>
+                  <li class="list-group-item border-top"><strong>Front-End Web Development Track</strong>
+                    <p>(click for details)</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+                        <span class="sr-only">100% Complete (success)</span>
+                      </div>
+                    </div>
+                  </li></a>
+
+                    <!-- Modal -->
+                    <div id="treehouseModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h3 id="myModalLabel">Treehouse Front-End Development Courses</h3>
+                        </div>
+                        <div class="modal-body">
+                          <ul class="modal-list">
+                            <li class="modal-list-heading">HTML</li>
+                            <li>Creating HTML Content</li>
+                            <li>Forms</li>
+                            <li>HTML Tables</li>
+                            <li>Video and Audio</li>
+                            <li>Accessibility</li>
+                          </ul>
+                         <ul class="modal-list">
+                          <li class="modal-list-heading">CSS</li>
+                          <li>Customizing Colors & Fonts</li>
+                          <li>Styling Web Pages & Navigation</li>
+                          <li>Selectors, Values, Units and Layout</li>
+                          <li>The Box Model</li>
+                          <li>Responsive Layouts & Media Queries</li>
+                          <li>Accordion Menu with CSS</li>
+                          <li>Responsive Images</li>
+                          <li>CSS Best Practices</li>
+
+
+                        </ul>
+                         <ul class="modal-list">
+                          <li class="modal-list-heading">JavaScript and jQuery</li>
+                          <li>Variables, Numbers, Conditional Statements, Functions</li>
+                          <li>Loops, Arrays and Objects</li>
+                          <li>Object-Oriented JavaScript</li>
+                          <li>jQuery Basics</li>
+                          <li>Interactive Web Pages with JavaScript</li>
+                          <li>Using jQuery Plugins</li>
+                          <li>Programming Step-by-Step with OO JS</li>
+
+
+                        </ul>
+                        <ul class="modal-list">
+                          <li class="modal-list-heading">Other</li>
+                          <li>Responsive Web Design and Testing</li>
+                          <li>Debugging HTML & CSS Problems</li>
+                          <li>AJAX Basics and JSON</li>
+                          <li>Ajax & jQuery & APIs</li>
+                          <li>Website Optimization</li>
+                          <li>Console Foundations</li>
+                          <li>Git Basics</li>
+                          <li>Front End Performance Optimization</li>
+                          <li>Sass Basics</li>
+                        </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                        </div>
+                      </div>  
+                    </div>
+
+                  <li class="list-group-item ed-heading"><strong>Codecademy</strong> </li>
+                  <a href="#" role="button" data-toggle="modal" data-target="#codecademyHTMLModal">
+                    <li class="list-group-item codecademy">
+                    <div class="progress codecademy">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">HTML & CSS 100%
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                    </li>
+                  </a>
+
+                  <!-- Codecademy HTML-CSS Modal -->
+                    <div id="codecademyHTMLModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h3 id="myModalLabel">Codecademy HTML & CSS Courses</h3>
+                        </div>
+                        <div class="modal-body">                        
+                          <ul class="modal-list">
+                            <li class="modal-list-heading">HTML & CSS</li>
+                            <li>HTML Basics</li>
+                            <li>Build Your Own Webpage</li>
+                            <li>HTML Basics II</li>
+                            <li>Create a Social Networking Profile</li>
+                            <li>HTML Basics III</li>
+                            <li>Clickable Photo Page</li>
+                            <li>CSS Overview</li>
+                            <li>Design a Button</li>
+                            <li>CSS Selectors</li>
+                            <li>Sorting Your Friends</li>
+                            <li>CSS Positioning</li>
+                            <li>Build a Resume</li>
+                          </ul>                       
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                        </div>
+                      </div>  
+                    </div>
+
+                  <a href="#" role="button" data-toggle="modal" data-target="#codecademyJavaScriptModal">
+                    <li class="list-group-item  codecademy">
+                        <div class="progress codecademy">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 100%">JavaScript 100%
+                          <span class="sr-only">100% Complete (success)</span>
+                        </div>
+                    </li>
+                  </a>
+
+                  <!-- Codecademy JavaScript Modal -->
+                    <div id="codecademyJavaScriptModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h3 id="myModalLabel">Codecademy JavaScript Courses</h3>
+                        </div>
+                        <div class="modal-body">                        
+                          <ul class="modal-list">
+                            <li class="modal-list-heading">JavaScript</li>
+                            <li>Getting Started with Programming</li>
+                            <li>Choose Your Own Adventure</li>
+                            <li>Functions in JS</li>
+                            <li>Build Rock, Paper, Scissors</li>
+                            <li>'For' Loops in JS</li>
+                            <li>Search Text for Your Name</li>
+                            <li>'While' Loops in JS</li>
+                            <li>Control Flow in JS</li>
+                            <li>Code Your Own Adventure 2</li>
+                            <li>Arrays & Objects in JS</li>
+                            <li>Contact List</li>
+                            <li>Objects in JS I</li>
+                            <li>Build an Address Book</li>
+                            <li>Objects in JS II</li>
+                            <li>Build a Cash Register</li>
+                          </ul>                       
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                        </div>
+                      </div>  
+                    </div>
+                    
+                  <a href="#" role="button" data-toggle="modal" data-target="#codecademyJqueryModal">  
+                    <li class="list-group-item  codecademy"> 
+                        <div class="progress codecademy">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 100%">jQuery 100%
+                          <span class="sr-only">100% Complete (success)</span>
+                        </div>
+                    </li>
+                  </a>
+
+                  <!-- Codecademy jQuery Modal -->
+                    <div id="codecademyJqueryModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h3 id="myModalLabel">Codecademy jQuery Courses</h3>
+                        </div>
+                        <div class="modal-body">                        
+                          <ul class="modal-list">
+                            <li class="modal-list-heading">jQuery</li>
+                            <li>Intro to jQuery</li>
+                            <li>jQuery Functions and Selectors</li>
+                            <li>Modifying HTML Elements</li>
+                            <li>jQuery Events</li>
+                            <li>jQuery Effects</li>          
+                          </ul>                       
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                        </div>
+                      </div>  
+                    </div>
+
+                  <a href="#" role="button" data-toggle="modal" data-target="#codecademyAngularModal">
+                    <li class="list-group-item  codecademy"> 
+                        <div class="progress codecademy">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Angular JS 100%
+                          <span class="sr-only">100% Complete (success)</span>
+                        </div>
+                    </li>
+                  </a>
+
+                  <!-- Codecademy Angular JS Modal -->
+                    <div id="codecademyAngularModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h3 id="myModalLabel">Codecademy Angular JS Courses</h3>
+                        </div>
+                        <div class="modal-body">                        
+                          <ul class="modal-list">
+                            <li class="modal-list-heading">AngularJS</li>
+                            <li>Your First App</li>
+                            <li>Pizza PLanet: Restuarant Menu</li>
+                            <li>Directives</li>
+                            <li>Build News Feed</li>
+                            <li>Services</li>
+                            <li>Outbox 1: Email App</li>
+                            <li>Routing</li>
+                            <li>Calendar App</li>
+                            <li>Putting it All Together</li>
+                            <li>NearMe1: Build Location-based Service</li>
+                            <li>NearMe2: Fetch Data from Wikipedia API for map</li>
+                          </ul>                       
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                        </div>
+                      </div>  
+                    </div>
+                    
+                  <li class="list-group-item ed-heading"><strong>Udemy</strong></li>
+
+                  <a href="#" role="button" data-toggle="modal" data-target="#udemyModal">
+                  <li class="list-group-item border-top "><strong>Complete Web Developer Course</strong> 
+                    <p>(click for details)</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%
+                        <span class="sr-only">85% Complete (success)</span>
+                    </div>
+                  </li></a>
+
+                  <!-- Modal -->
+                    <div id="udemyModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h3 id="myModalLabel">Complete Web Developer Courses</h3>
+                        </div>
+                        <div class="modal-body">
+                          <ul class="modal-list">
+                            <li class="modal-list-heading">HTML</li>
+                            <li>Webpage Structure</li>
+                            <li>Forms & Lists</li>
+                            <li>HTML Tables</li>
+                            <li>iFrames</li>
+                            <li>Images and Formatting Text</li>
+                          </ul>
+                         <ul class="modal-list">
+                          <li class="modal-list-heading">CSS</li>
+                          <li>Customizing Text Styles & Fonts</li>
+                          <li>Positioning and Floating Elements</li>
+                          <li>Divs</li>
+                          <li>Styling Links</li>
+                          <li>Margins and Padding</li>
+                        </ul>
+                         <ul class="modal-list">
+                          <li class="modal-list-heading">JavaScript and jQuery</li>
+                          <li>Variables, if Statements, Functions</li>
+                          <li>Loops and Arrays</li>
+                          <li>Changing Website Content</li>
+                          <li>jQuery Basics</li>
+                          <li>Interactive Web Pages with JavaScript</li>
+                          <li>Using jQuery Plugins</li>
+                          <li>Loading Data with AJAX</li>
+
+
+                        </ul>
+                        <ul class="modal-list">
+                          <li class="modal-list-heading">Other</li>
+                          <li>Bootstrap</li>
+                          <li>Wordpress</li>
+                          <li>PHP</li>
+                          <li>MySQL</li>
+                          <li>APIs</li>
+                          <li>Twitter and Google API</li>
+                        </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                        </div>
+                      </div>  
+                    </div>
+
+                  <li class="list-group-item codecademy">Projects in JavaScript/jQuery
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                  </li>               
+                  <li class="list-group-item codecademy">Projects in Bootstrap
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item codecademy">Projects in CSS3 & HTML5
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                  </li>                                           
+                  <li class="list-group-item"><strong>Reading:</strong> HTML/CSS by Jon Duckett
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="2100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                  </li>                 
+                  <li class="list-group-item"><strong>Reading:</strong> JavaScript/jQuery by Jon Duckett
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                  </li>
+                                   
+                </ul>
+              </div>
+            </div>  
+          </div>  
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <div class="container">
+        <div class="spacer-line">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle1"></div>
+        </div>
+        <span id="about-justin"><h2>About Justin</h2>
+        <p>Find out about the real person behind the web developer.</p></span>
+        <div class="spacer-line">
+        </div>
+        <div class="row about-row">
+          <img src="img/justinphoto.jpg" alt="Photo of Justin" id="justin-photo" class="img-circle img-responsive">
+          <div class="col-md-8">            
+            <p>Web development has been beckoning me for close to a decade, since as a teacher, I created websites, blogs and online activities for my own students to use. With so many negative changes in the education field over the past decade, I was inspired to seek a new career in web development and decided last year that my calling was in a field where I could battle it out with a browser, jab at JavaScript and seek my success with CSS. I love the challenge of taking a design and bringing it to life on the web with a pixel-perfect rendition!</p>
+
+            <p>Since my decision to enter the field of web development, I have spent nearly every minute of my free time studying and learning the nuances and modern languages of building websites and web apps today. All this while teaching full-time, caring for a 2-year old son and awaiting a new baby. This path I have taken illustrates how motivated and dedicated I am to work and continue learning in this field for the rest of my career.</p> 
+
+            <p>Why hire me? I believe that my reputation rests on my results. Whether its in a classroom or on the web, I expect excellence and work until I achieve it. My reputation is built not just from my clients' satisfaction but my own. I create attractive, efficient, accessible, websites that ultimately provide users with what they need and clients with the unsurpassed quality they expect. </p>
+
+            <p>I have been specializing in Front-End Web Development while learning other aspects of design and back-end development to enable me to understand the big picture. I can provide the design functionality you need to reach your web visitors on an array of different devices that can be easily adapted in the future. I enjoy many types of projects for clients including small business, advertising, governments, and non-profit organizations.</p>
+
+            <img src="img/bwca.jpg" alt="BWCA photo" class="img-responsive bwca-img">
+
+          </div>
+
+          <div class="col-md-4 offline-life">
+
+            <div id="offline-info"><h3>My Offline Life</h3>
+              <p>I may not have much free time after work, studying web development, taking care of my two-year old son and my wonderful wife; but if I do you will often find me playing cards and games like Settlers of Catan. Or perhaps enjoying an afternoon of canoeing after a night of good old tent camping. If its a Sunday I'll be agonizing over another Detroit Lions' game and quite likely looking forward to the Red Wings' hockey season. As a Political Science major, I diligently do my daily reading of political happenings and international events. My office staff includes two dogs and two cats who are generally lazy buffoons. </p> 
+              <p>Every chance we get my family loves to travel the world. We love the sights and cultures of our world and all it has to discover. I have worked at the United Nations and lived for a year in the Czech Republic as a US Fulbright Scholar. I enjoy meeting and working with people from all cultures and walks of life. I bring a positive and easy-going outlook to life and work and love my new career in web development. </p>
+            </div>
+          </div>
+         
+        </div>
+
+      </div>  
+    </section>
+
+    <section id="contact" class="content-section text-center">
+      <div class="row">
+ 
+        <div class="col-md-8 col-md-offset-2">
+         <div class="spacer-line">
+            <div class="circle1"></div>
+            <div class="circle3"></div>
+            <div class="circle1"></div>
+          </div>
+          <h2>Contact Justin Gustafson</h2>
+          <p>Feel free to send me an email any time. You can also connect with me on Twitter or LinkedIn.</p>
+          <a href="http://jtwgus.com/contactform/fm-contact-us.cgi" class="btn btn-default btn-lg">Contact Me Now</a>
+          <p>jtwgus@gmail.com</p>
+          <ul class="list-inline banner-social-buttons">
+            <li><a target="_blank" href="http://twitter.com/jtwgus" class="btn bth-default btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
+            </li>
+            <li><a target="_blank" href="https://www.linkedin.com/pub/justin-gustafson/45/639/980" class="btn bth-default btn-lg"><i class="fa fa-linkedin-square fa-fw"></i><span class="network-name">LinkedIn</span></a>
+            </li>
+            <li><a target="_blank" href="http://github.com/Guscoder" class="btn bth-default btn-lg"><i class="fa fa-github fa-fw"></i><span class="network-name">GitHub</span></a>
+            </li>
+          </ul>
+        </div>  
+      </div>
+    </section>  
+
+    <footer>
+      <p>ICG Web Development &copy; 2015, All Rights Reserved</p>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/bootstrap.js"></script>
+
+    
+  </body>
+</html>
